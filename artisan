@@ -1,13 +1,15 @@
 #!/usr/bin/env php
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/bootstrap/app.php';
 
+use Swift\Foundation\Console\ServeCommand;
 use Symfony\Component\Console\Application;
 
 $app = new Application();
 
 // register commands
+$app->add(new ServeCommand());
 $commands = glob(app_path() . '/command/*.php');
 foreach ($commands as $command) {
     $bool = preg_match('/(app\/.+?)\.php/', $command, $matches);
