@@ -1,15 +1,15 @@
 {
   "name": "daophp/daophp",
   "type": "project",
+  "description": "High performance HTTP Service Framework.",
   "keywords": [
     "high performance",
     "http service"
   ],
   "license": "MIT",
   "homepage": "http://www.daophp.com",
-  "description": "High performance HTTP Service Framework.",
   "require": {
-    "php": ">=7.2",
+    "php": "^7.4",
     "daophp/framework": "dev-master"
   },
   "config": {
