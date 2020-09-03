@@ -1,0 +1,12 @@
+.container {
+    margin: 220px auto;
+    width: 520px;
+}
+
+.layui-form-item .captcha-input {
+    width: 120px;
+}
+
+.layui-field-box .layui-form {
+    margin: 50px 48px 50px 0;
+}

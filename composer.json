@@ -1,0 +1,35 @@
+{
+  "name": "daophp/daophp",
+  "type": "project",
+  "keywords": [
+    "high performance",
+    "http service"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.daophp.com",
+  "description": "High performance HTTP Service Framework.",
+  "require": {
+    "php": ">=7.2",
+    "daophp/framework": "dev-master"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": "app/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "suggest": {
+    "ext-event": "For better performance. "
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  }
+}
