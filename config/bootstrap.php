@@ -1,17 +1,10 @@
 <?php
 
-use Swift\Database\Laravel;
-use Swift\Foundation\Container;
-use Swift\Log\Log;
-use Swift\Redis\Redis;
-use Swift\Session\Session;
-use Swift\Translation\Translation;
-
 return [
-    Container::class,
-    Session::class,
-    Laravel::class,
-    Redis::class,
-    Log::class,
-    Translation::class,
+    \Swift\Container\ContainerProvider::class,
+    \Swift\Session\SessionProvider::class,
+    \Swift\Database\LaravelProvider::class,
+    \Swift\Redis\RedisProvider::class,
+    \Swift\Log\LogProvider::class,
+    \Swift\Translation\TranslationProvider::class,
 ];
