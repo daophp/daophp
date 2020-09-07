@@ -19,5 +19,11 @@ return [
         ],
     ],
 
-    'session_name' => 'PHPSESSID',
+    'session_name' => '_session',
+    'lifetime' => env('SESSION_LIFETIME', 1440),
+    'path' => '/',
+    'domain' => env('SESSION_DOMAIN', ''),
+    'secure' => env('SESSION_SECURE_COOKIE', false),
+    'http_only' => true,
+    'same_site' => '',
 ];
