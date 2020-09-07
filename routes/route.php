@@ -2,6 +2,6 @@
 
 use Swift\Routing\Route;
 
-Route::any('/test', function ($request) {
-    return response('test');
+Route::any('/admin', function ($request) {
+    return redirect('/console');
 });
