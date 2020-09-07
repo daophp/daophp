@@ -1,4 +1,4 @@
-@extends('console.view.auth.layout')
+@extends('auth.layout')
 
 @section('content')
     forgot

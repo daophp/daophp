@@ -1,4 +1,4 @@
-@extends('console.view.layout')
+@extends('layout')
 
 @section('content')
     console page

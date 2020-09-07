@@ -1,4 +1,4 @@
-@extends('console.view.auth.layout')
+@extends('auth.layout')
 
 @section('content')
     <fieldset class="layui-elem-field">

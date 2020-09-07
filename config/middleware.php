@@ -4,10 +4,10 @@ return [
     '' => [
         //
     ],
-    'api' => [
+    'Api' => [
         \App\Http\Middleware\AccessControl::class,
     ],
-    'console' => [
+    'Console' => [
         \App\Http\Middleware\Authenticate::class,
         \App\Http\Middleware\Authorization::class,
     ],

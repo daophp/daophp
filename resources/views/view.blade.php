@@ -1,4 +1,4 @@
-@extends('view.layout')
+@extends('layout')
 
 @section('content')
     hello {{ $name }}
