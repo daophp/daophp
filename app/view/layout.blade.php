@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico"/>
     <title>{{ $title ?? 'untitled' }}</title>
-    <link rel="stylesheet" href="/static/layui/css/layui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sentsin/layui@v2.5.6/dist/css/layui.css">
     <link rel="stylesheet" href="/themes/default/css/app.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
 <footer>
     footer <a href="/console">管理后台</a>
 </footer>
-<script src="/static/layui/layui.all.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sentsin/layui@v2.5.6/dist/layui.all.js"></script>
 <script src="/themes/default/js/app.js"></script>
 </body>
 </html>
