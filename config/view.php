@@ -1,5 +1,8 @@
 <?php
 
 return [
-    'handler' => Swift\View\Blade::class
+    'handler' => \Swift\View\Blade::class,
+    'paths' => [
+        resource_path('views')
+    ],
 ];

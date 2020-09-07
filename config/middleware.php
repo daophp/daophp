@@ -5,10 +5,10 @@ return [
         //
     ],
     'api' => [
-        \app\middleware\AccessControl::class,
+        \App\Http\Middleware\AccessControl::class,
     ],
     'console' => [
-        \app\middleware\Authenticate::class,
-        \app\middleware\Authorization::class,
+        \App\Http\Middleware\Authenticate::class,
+        \App\Http\Middleware\Authorization::class,
     ],
 ];

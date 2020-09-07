@@ -3,7 +3,7 @@
 return [
     // 文件更新检测
     'monitor' => [
-        'handler' => app\process\FileMonitor::class,
+        'handler' => \App\Process\FileMonitor::class,
         'constructor' => [
             // 监控这些目录
             'monitor_dir' => [
