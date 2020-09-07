@@ -8,7 +8,7 @@ use Swift\Http\Response;
  * Trait JsonResponse
  * @package app\api\component
  */
-trait JsonTrait
+trait JsonResponse
 {
     /**
      * @var int

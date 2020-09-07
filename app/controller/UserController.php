@@ -8,7 +8,7 @@ use Swift\Http\Request;
  * Class User
  * @package app\controller
  */
-class User extends Controller
+class UserController extends Controller
 {
     public function index(Request $request)
     {

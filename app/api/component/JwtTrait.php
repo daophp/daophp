@@ -2,9 +2,9 @@
 
 namespace app\api\component;
 
-use Carbon\Carbon;
 use Exception;
 use Firebase\JWT\JWT;
+use Swift\Support\Carbon;
 
 /**
  * Trait JwtTrait

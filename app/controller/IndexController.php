@@ -9,7 +9,7 @@ use Swift\Http\Response;
  * Class Index
  * @package app\controller
  */
-class Index extends Controller
+class IndexController extends Controller
 {
     /**
      * @param Request $request

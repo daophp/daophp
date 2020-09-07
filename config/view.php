@@ -1,7 +1,5 @@
 <?php
 
-use Swift\View\Blade;
-
 return [
-    'handler' => Blade::class
+    'handler' => Swift\View\Blade::class
 ];

@@ -6,10 +6,10 @@ use Swift\Http\Request;
 use Swift\Http\Response;
 
 /**
- * Class Auth
+ * Class AuthController
  * @package app\console\controller
  */
-class Auth
+class AuthController
 {
     /**
      * @param Request $request

@@ -5,10 +5,10 @@ namespace app\console\controller;
 use Swift\Http\Request;
 
 /**
- * Class Index
+ * Class IndexController
  * @package app\console\controller
  */
-class Index extends Controller
+class IndexController extends Controller
 {
     public function index(Request $request)
     {

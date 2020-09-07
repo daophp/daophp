@@ -2,7 +2,7 @@
 
 namespace app\api\controller;
 
-use app\api\component\JsonTrait;
+use app\api\component\JsonResponse;
 use app\api\component\JwtTrait;
 
 /**
@@ -11,5 +11,5 @@ use app\api\component\JwtTrait;
  */
 abstract class Controller
 {
-    use JsonTrait, JwtTrait;
+    use JsonResponse, JwtTrait;
 }

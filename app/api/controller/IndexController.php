@@ -3,10 +3,10 @@
 namespace app\api\controller;
 
 /**
- * Class Index
+ * Class IndexController
  * @package app\api\controller
  */
-class Index extends Controller
+class IndexController extends Controller
 {
     public function index()
     {

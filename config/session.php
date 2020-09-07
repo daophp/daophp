@@ -1,12 +1,9 @@
 <?php
 
-use Swift\Session\FileSessionHandler;
-
 return [
-
     'type' => 'file', // or redis
 
-    'handler' => FileSessionHandler::class,
+    'handler' => Swift\Session\FileSessionHandler::class,
 
     'config' => [
         'file' => [
