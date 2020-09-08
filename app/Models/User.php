@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Model;
+namespace App\Models;
 
 use Swift\Database\Model;
 
 /**
  * Class User
- * @package App\Model
+ * @package App\Models
  */
 class User extends Model
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controller;
+namespace App\Http\Controllers;
 
 use App\Api\Component\JsonResponse;
 
 /**
  * Class Controller
- * @package App\Http\Controller
+ * @package App\Http\Controllers
  */
 abstract class Controller
 {
