@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Console\Controller;
+namespace App\Console\Controllers;
 
 use Swift\Http\Request;
 use Swift\Http\Response;
 
 /**
  * Class AuthController
- * @package App\Console\Controller
+ * @package App\Console\Controllers
  */
 class AuthController
 {

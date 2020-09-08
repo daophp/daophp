@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Console\Controller;
+namespace App\Console\Controllers;
 
 use Swift\Http\Request;
 
 /**
  * Class IndexController
- * @package App\Console\Controller
+ * @package App\Console\Controllers
  */
 class IndexController extends Controller
 {

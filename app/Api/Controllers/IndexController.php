@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Api\Controller;
+namespace App\Api\Controllers;
 
 /**
  * Class IndexController
- * @package App\Api\Controller
+ * @package App\Api\Controllers
  */
 class IndexController extends Controller
 {
