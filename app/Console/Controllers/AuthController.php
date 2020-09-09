@@ -2,6 +2,7 @@
 
 namespace App\Console\Controllers;
 
+use App\Http\Controllers\Controller;
 use Swift\Http\Request;
 use Swift\Http\Response;
 
@@ -9,7 +10,7 @@ use Swift\Http\Response;
  * Class AuthController
  * @package App\Console\Controllers
  */
-class AuthController
+class AuthController extends Controller
 {
     /**
      * @param Request $request

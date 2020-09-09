@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Api\Component;
+namespace App\Http\Component;
 
 use Exception;
 use Firebase\JWT\JWT;
@@ -8,7 +8,7 @@ use Swift\Support\Carbon;
 
 /**
  * Trait JwtTrait
- * @package App\Api\Component
+ * @package App\Http\Component
  */
 trait JwtTrait
 {

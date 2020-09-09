@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Api\Component;
+namespace App\Http\Component;
 
 use Swift\Http\Response;
 
 /**
  * Trait JsonResponse
- * @package App\Api\Component
+ * @package App\Http\Component
  */
 trait JsonResponse
 {
