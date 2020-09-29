@@ -1,5 +1,9 @@
 <?php
 
-require __DIR__ . '/../vendor/autoload.php';
+$builder = new \DI\ContainerBuilder();
 
-define('BASE_PATH', realpath(__DIR__ . '/../'));
+$builder->addDefinitions(config('dependence', []));
+$builder->useAutowiring(true);
+$builder->useAnnotations(true);
+
+return $builder->build();
