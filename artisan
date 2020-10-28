@@ -12,7 +12,7 @@ $app = new Application();
 
 // register commands
 $app->add(new ServeCommand());
-$commands = glob(app_path() . '/command/*.php');
+$commands = glob(app_path('Command/*.php'));
 foreach ($commands as $command) {
     $bool = preg_match('/(app\/.+?)\.php/', $command, $matches);
     if ($bool !== false && isset($matches[1])) {
