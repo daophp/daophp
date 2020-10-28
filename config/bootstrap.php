@@ -7,4 +7,5 @@ return [
     \Swift\Redis\RedisProvider::class,
     \Swift\Log\LogProvider::class,
     \Swift\Translation\TranslationProvider::class,
+    \Swift\Translation\StompProvider::class,
 ];
