@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Component\JsonResponse;
-use App\Http\Component\JwtTrait;
+use App\Api\JsonResponse;
+use App\Api\JwtTrait;
 
 /**
  * Class Controller

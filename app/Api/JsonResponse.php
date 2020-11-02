@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Http\Component;
+namespace App\Api;
 
 use Swift\Http\Response;
 
 /**
  * Trait JsonResponse
- * @package App\Http\Component
+ * @package App\Api
  */
 trait JsonResponse
 {
     /**
      * @var int
      */
-    protected $errorCode = 200;
+    protected $errorCode = 0;
 
     /**
      * @return int
