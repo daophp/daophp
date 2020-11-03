@@ -1,9 +1,10 @@
 <?php
 
-$builder = new \DI\ContainerBuilder();
+use DI\ContainerBuilder;
 
-$builder->addDefinitions(config('dependence', []));
-$builder->useAutowiring(true);
-$builder->useAnnotations(true);
+$app = new ContainerBuilder();
 
-return $builder->build();
+$app->useAutowiring(true);
+$app->useAnnotations(true);
+
+return $app->build();
