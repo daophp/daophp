@@ -8,9 +8,9 @@
 
 `composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/`
 
-**2、下载daophp**
+**2、composer安装**
 
-`git clone https://github.com/daophp/daophp`
+`composer create-project daosoft/daophp`
 
 
 **3、执行安装**
