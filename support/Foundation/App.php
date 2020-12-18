@@ -163,28 +163,11 @@ class App
             static::send($connection, $callback($request), $request);
         } catch (Throwable $e) {
             static::send($connection, static::exceptionResponse($e, $request), $request);
-            try {
-                $app = $request->app ?: '';
-                $exception_config = Config::get('exception');
-                $default_exception = $exception_config[''] ?? ExceptionHandler::class;
-                $exception_handler_class = $exception_config[$app] ?? $default_exception;
-
-                /** @var ExceptionHandlerInterface $exception_handler */
-                $exception_handler = static::$_container->make($exception_handler_class, [
-                    'logger' => static::$_logger,
-                    'debug' => Config::get('app.debug')
-                ]);
-                $exception_handler->report($e);
-                $response = $exception_handler->render($request, $e);
-                static::send($connection, $response, $request);
-            } catch (Throwable $e) {
-                static::send($connection, Config::get('app.debug') ? (string)$e : $e->getMessage(), $request);
-            }
         }
         return null;
     }
 
-    protected static function exceptionResponse(\Throwable $e, $request)
+    protected static function exceptionResponse(Throwable $e, $request)
     {
         try {
             $app = $request->app ?: '';
@@ -406,7 +389,7 @@ class App
             }
             return false;
         }
-        if ($path[0] === '/') {
+        if ($path && $path[0] === '/') {
             $path = substr($path, 1);
         }
         $explode = explode('/', $path);
@@ -430,6 +413,7 @@ class App
 
         $app = parse_name($explode[0], 1);
         $controller = 'Index';
+        $action = 'index';
         if (!empty($explode[1])) {
             $controller = parse_name($explode[1], 1);
             if (!empty($explode[2])) {
