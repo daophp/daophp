@@ -468,26 +468,11 @@ class App
      */
     public static function loadController($path)
     {
-        if (strpos($path, 'phar://') === false) {
-            foreach (glob($path . '/Http/Controllers/*.php') as $file) {
-                require_once $file;
-            }
-            foreach (glob($path . '/*/Controllers/*.php') as $file) {
-                require_once $file;
-            }
-        } else {
-            $dir_iterator = new RecursiveDirectoryIterator($path);
-            $iterator = new RecursiveIteratorIterator($dir_iterator);
-            foreach ($iterator as $file) {
-                if (is_dir($file)) {
-                    continue;
-                }
-                $fileInfo = new SplFileInfo($file);
-                $ext = $fileInfo->getExtension();
-                if (strpos($file, '/Controllers/') !== false && $ext === 'php') {
-                    require_once $file;
-                }
-            }
+        foreach (glob($path . '/Http/Controllers/*.php') as $file) {
+            require_once $file;
+        }
+        foreach (glob($path . '/*/Controllers/*.php') as $file) {
+            require_once $file;
         }
     }
 
