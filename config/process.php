@@ -19,6 +19,9 @@ return [
             ]
         ]
     ],
+    'task'  => [
+        'handler'  => \App\Process\Task::class
+    ],
     // 其它进程
     /*'websocket'  => [
         'handler'  => \App\Process\Websocket::class,
