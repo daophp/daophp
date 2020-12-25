@@ -1,5 +1,7 @@
 @extends('layout')
 
 @section('content')
-    welcome
+    <div class="message">
+        Welcome to DaoPHP. ٩(๑❛ᴗ❛๑)۶
+    </div>
 @endsection

@@ -10,7 +10,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" href="/favicon.ico"/>
     <title>{{ $title ?? 'untitled' }}</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sentsin/layui@v2.5.6/dist/css/layui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sentsin/layui@v2.5.7/dist/css/layui.css">
     <link rel="stylesheet" href="/static/console/css/app.css">
 </head>
 <body class="layui-layout-body">
@@ -80,7 +80,7 @@
         &copy; daophp.com
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/gh/sentsin/layui@v2.5.6/dist/layui.all.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sentsin/layui@v2.5.7/dist/layui.all.js"></script>
 <script src="/static/console/js/app.js"></script>
 </body>
 </html>
