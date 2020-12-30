@@ -11,11 +11,12 @@ return [
                 app_path(),
                 config_path(),
                 base_path() . '/bootstrap',
-                base_path() . '/resources'
+                base_path() . '/resources',
+                base_path() . '/.env',
             ],
             // 监控这些后缀的文件
             'monitor_extenstions' => [
-                'php', 'html', 'htm'
+                'php', 'html', 'htm', 'env'
             ]
         ]
     ],

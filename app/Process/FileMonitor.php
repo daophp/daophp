@@ -4,6 +4,9 @@ namespace App\Process;
 
 use Workerman\Timer;
 use Workerman\Worker;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use SplFileInfo;
 
 /**
  * Class FileMonitor
@@ -53,11 +56,16 @@ class FileMonitor
         clearstatcache();
 
         if (!is_dir($monitor_dir)) {
-            return;
+            if (!is_file($monitor_dir)) {
+                return;
+            }
+            $iterator = [new SplFileInfo($monitor_dir)];
+        } else {
+            // recursive traversal directory
+            $dir_iterator = new RecursiveDirectoryIterator($monitor_dir);
+            $iterator = new RecursiveIteratorIterator($dir_iterator);
         }
-        // recursive traversal directory
-        $dir_iterator = new \RecursiveDirectoryIterator($monitor_dir);
-        $iterator = new \RecursiveIteratorIterator($dir_iterator);
+
         foreach ($iterator as $file) {
             /** var SplFileInfo $file */
             if (is_dir($file)) {
