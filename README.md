@@ -10,7 +10,7 @@
 
 **2、composer安装**
 
-`composer create-project daosoft/daophp`
+`composer create-project daophp/daophp`
 
 
 **3、执行安装**
