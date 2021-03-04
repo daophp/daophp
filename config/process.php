@@ -15,7 +15,7 @@ return [
                 base_path() . '/.env',
             ],
             // 监控这些后缀的文件
-            'monitor_extenstions' => [
+            'monitor_extensions' => [
                 'php', 'html', 'htm', 'env'
             ]
         ]
