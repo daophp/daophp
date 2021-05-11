@@ -2,7 +2,7 @@
 
 return [
     '' => [
-        //
+        // global middlewares
     ],
     'Api' => [
         \App\Http\Middleware\AccessControl::class,
