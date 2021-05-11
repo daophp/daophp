@@ -14,9 +14,9 @@ class AuthController extends Controller
 {
     /**
      * @param Request $request
-     * @return Response|string
+     * @return Response
      */
-    public function login(Request $request)
+    public function login(Request $request): Response
     {
         if ($request->method() === 'POST') {
             // save auth
@@ -32,9 +32,9 @@ class AuthController extends Controller
 
     /**
      * @param Request $request
-     * @return Response|string
+     * @return Response
      */
-    public function forgot(Request $request)
+    public function forgot(Request $request): Response
     {
         if ($request->isAjax()) {
             // do action
@@ -45,9 +45,9 @@ class AuthController extends Controller
 
     /**
      * @param Request $request
-     * @return Response|string
+     * @return Response
      */
-    public function reset(Request $request)
+    public function reset(Request $request): Response
     {
         if ($request->isAjax()) {
             // do action

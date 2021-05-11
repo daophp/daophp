@@ -3,6 +3,7 @@
 namespace App\Api\Controllers;
 
 use App\Http\Controllers\Controller;
+use Swift\Http\Response;
 
 /**
  * Class IndexController
@@ -10,7 +11,7 @@ use App\Http\Controllers\Controller;
  */
 class IndexController extends Controller
 {
-    public function index()
+    public function index(): Response
     {
         return $this->succeed(['api server']);
     }

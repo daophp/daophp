@@ -4,6 +4,7 @@ namespace App\Console\Controllers;
 
 use App\Http\Controllers\Controller;
 use Swift\Http\Request;
+use Swift\Http\Response;
 
 /**
  * Class IndexController
@@ -11,7 +12,7 @@ use Swift\Http\Request;
  */
 class IndexController extends Controller
 {
-    public function index(Request $request)
+    public function index(Request $request): Response
     {
         $session = $request->session();
         $session->set('name', 'daophp');

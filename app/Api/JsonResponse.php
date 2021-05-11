@@ -13,12 +13,12 @@ trait JsonResponse
     /**
      * @var int
      */
-    protected $errorCode = 0;
+    protected int $errorCode = 0;
 
     /**
      * @return int
      */
-    protected function getErrorCode()
+    protected function getErrorCode(): int
     {
         return $this->errorCode;
     }
@@ -27,7 +27,7 @@ trait JsonResponse
      * @param $errorCode
      * @return $this
      */
-    protected function setErrorCode($errorCode)
+    protected function setErrorCode($errorCode): JsonResponse
     {
         $this->errorCode = $errorCode;
         return $this;
@@ -40,7 +40,7 @@ trait JsonResponse
      * @param array $header 发送的Header信息
      * @return Response
      */
-    protected function succeed($data, array $header = [])
+    protected function succeed($data, array $header = []): Response
     {
         return $this->response([
             'status' => 'success',
@@ -53,7 +53,7 @@ trait JsonResponse
      * @param $message
      * @return Response
      */
-    protected function failed($message)
+    protected function failed($message): Response
     {
         return $this->response([
             'status' => 'failed',
@@ -70,7 +70,7 @@ trait JsonResponse
      * @param string $client_name
      * @return Response
      */
-    protected function response($data, $client_name = 'X-Client-Id')
+    protected function response($data, string $client_name = 'X-Client-Id'): Response
     {
         $client_id = request()->header($client_name);
 

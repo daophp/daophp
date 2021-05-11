@@ -15,7 +15,7 @@ class IndexController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function index(Request $request)
+    public function index(Request $request): Response
     {
         return view('index');
     }
@@ -24,7 +24,7 @@ class IndexController extends Controller
      * @param Request $request
      * @return Response|string
      */
-    public function view(Request $request)
+    public function view(Request $request): Response
     {
         return view('view', ['name' => 'daophp']);
     }
@@ -33,7 +33,7 @@ class IndexController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function json(Request $request)
+    public function json(Request $request): Response
     {
         return $this->succeed(['msg' => 'ok']);
     }
@@ -42,7 +42,7 @@ class IndexController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function file(Request $request)
+    public function file(Request $request): Response
     {
         $file = $request->file('upload');
         if ($file && $file->isValid()) {

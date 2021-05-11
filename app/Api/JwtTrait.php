@@ -17,7 +17,7 @@ trait JwtTrait
      * @param null $payload
      * @return string
      */
-    public function JwtEncode($payload = null)
+    public function JwtEncode($payload = null): string
     {
         $key = config('jwt.key');
 
@@ -32,7 +32,7 @@ trait JwtTrait
      * @param string $item
      * @return mixed
      */
-    public function JwtDecode($token, $item = 'body')
+    public function JwtDecode($token, string $item = 'body')
     {
         if (is_null($token)) {
             return null;
@@ -55,7 +55,7 @@ trait JwtTrait
      * @param string $header
      * @return mixed
      */
-    public function authorization($token = null, $header = 'Jwt-Token')
+    public function authorization($token = null, string $header = 'Jwt-Token')
     {
         if (is_null($token)) {
             $token = request()->header($header);
@@ -69,7 +69,7 @@ trait JwtTrait
      * @param null $data
      * @return array
      */
-    protected function getPayload($data = null)
+    protected function getPayload($data = null): array
     {
         $jwt = config('jwt');
 

@@ -15,7 +15,7 @@ class UserController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function index(Request $request)
+    public function index(Request $request): Response
     {
         return view('user');
     }

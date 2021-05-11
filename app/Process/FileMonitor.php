@@ -17,12 +17,12 @@ class FileMonitor
     /**
      * @var array
      */
-    protected $_paths = [];
+    protected array $_paths = [];
 
     /**
      * @var array
      */
-    protected $_extensions = [];
+    protected array $_extensions = [];
 
     /**
      * FileMonitor constructor.
